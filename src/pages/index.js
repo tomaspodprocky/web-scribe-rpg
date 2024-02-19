@@ -1,5 +1,7 @@
-import * as React from "react"
+import * as React from "react";
 import { FacebookProvider, Like } from "react-facebook"
+import '../styles/global.css';
+
 
 const pageStyles = {
   color: "#232129",
@@ -130,18 +132,19 @@ const IndexPage = () => {
   React.useEffect(() => {
     document.body.style.backgroundImage = "url(/scribe-background.jpg)";
     document.body.style.backgroundColor = "transparent";
-    document.body.style.backgroundPosition = "top right";
-    // document.body.style.transition = "background-image 0.5s";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.width ='100vw';
+    document.body.style.height = '100vh';
+    //document.body.style.transition = "background-image 0.5s";
     // document.body.style.transitionDelay = "0.5s";
   })
 
   return (
     <main style={pageStyles}>
       This is just my site...
-      <FacebookProvider appId="12345667">
-      
-        <Like href="https://www.facebook.com/profile.php?id=61552530251263" colorScheme="dark" showFaces share />
-      </FacebookProvider>
     </main>
   )
 }

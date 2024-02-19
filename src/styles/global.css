@@ -1,9 +1,11 @@
 body {
-    /* background-image: "url(/Intro.jpg)"; */
+    background-image: "url(/scribe-background.jpg)";
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:top right;
-    background-attachment: fixed;
+    background-position:center;
+    width:'100vw';
+    height: '100vh';
+    /*background-attachment: fixed;
     background-blend-mode: overlay;
-    transition: background-image 0.5s;
-  }
+    transition: background-image 0.5s; */
+}
