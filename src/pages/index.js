@@ -1,151 +1,114 @@
 import * as React from "react";
-import { FacebookProvider, Like } from "react-facebook"
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import { StaticImage } from 'gatsby-plugin-image';
 import '../styles/global.css';
 
 
 const pageStyles = {
-  color: "#232129",
-  padding: 96,
+  color: "#000000",
+  padding: 196,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
+
+const PageBackground = () => {
+  return (
+    <MouseParallaxContainer globalFactorX={1} globalFactorY={0} inverted useWindowMouseEvents className="parallax_container"
+      style={{ overflow: "visible" }}>
+
+      <MouseParallaxChild factorX={0.02} factorY={0} style={{ position: "absolute", top: 0, left: 0 }}>
+        <div className="parallax_layer" id="layer6"></div>
+      </MouseParallaxChild>
+
+      <MouseParallaxChild factorX={0.05} factorY={0} style={{ position: "absolute", top: 0, left: 0 }}>
+        <div className="parallax_layer" id="layer5"></div>
+      </MouseParallaxChild>
+
+      <MouseParallaxChild factorX={0.1} factorY={0} style={{ position: "absolute", top: 0, left: 0 }}>
+        <div className="parallax_layer" id="layer4"></div>
+      </MouseParallaxChild>
+
+      <MouseParallaxChild factorX={0.15} factorY={0} style={{ position: "absolute", top: 0, left: 0 }}>
+        <div className="parallax_layer" id="layer3"></div>
+      </MouseParallaxChild>
+
+      <MouseParallaxChild factorX={0.3} factorY={0} style={{ position: "absolute", top: 0, left: 0 }}>
+        <div className="parallax_layer" id="layer2"></div>
+      </MouseParallaxChild>
+      
+      <MouseParallaxChild factorX={0.5} factorY={0} style={{ position: "absolute", top: 0, left: 0 }}>
+        <div className="parallax_layer" id="layer1"></div>
+      </MouseParallaxChild>
+  
+    </MouseParallaxContainer>
+  );
 }
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+function PageImage() {
+  return (
+    
+    <MouseParallaxContainer globalFactorX={1} globalFactorY={0} inverted useWindowMouseEvents resetOnLeave className="containerStyle" style={{overflow:"visible !important"}}>
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+      <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{position:"relative", zIndex:-1}}>
+        <StaticImage src="../images/MainMenuLayer07.png" className="imageStyle" />
+      </MouseParallaxChild>
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+      <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{ zIndex:10}}>
+        <StaticImage src="../images/MainMenuNadpis.png" className="imageStyle" />
+      </MouseParallaxChild>
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+      <MouseParallaxChild factorX={0.02} factorY={0} className="parallaxChild" style={{zIndex:0}}>
+        <StaticImage src="../images/MainMenuLayer06.png" className="imageStyle" />
+      </MouseParallaxChild>
+        
+      <MouseParallaxChild factorX={0.05} factorY={0} className="parallaxChild" style={{zIndex:1}}>
+        <StaticImage src="../images/MainMenuLayer05.png" className="imageStyle"/>
+      </MouseParallaxChild>
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+      <MouseParallaxChild factorX={0.1} factorY={0} className="parallaxChild" style={{zIndex:2}}>
+        <StaticImage src="../images/MainMenuLayer04.png" className="imageStyle" />
+      </MouseParallaxChild>
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+      <MouseParallaxChild factorX={0.15} factorY={0} className="parallaxChild" style={{zIndex:3}}>
+        <StaticImage src="../images/MainMenuLayer03.png" className="imageStyle" />
+      </MouseParallaxChild>
+
+      <MouseParallaxChild factorX={0.3} factorY={0} className="parallaxChild" style={{zIndex:4}}>
+        <StaticImage src="../images/MainMenuLayer02.png" className="imageStyle" />
+      </MouseParallaxChild>
+  
+      <MouseParallaxChild factorX={0.5} factorY={0} className="parallaxChild" style={{zIndex:5}}>
+        <StaticImage src="../images/MainMenuLayer01.png" className="imageStyle" />
+      </MouseParallaxChild>
+  
+    </MouseParallaxContainer>
+  );
+}
 
 
 const IndexPage = () => {
 
-  React.useEffect(() => {
-    document.body.style.backgroundImage = "url(/scribe-background.jpg)";
-    document.body.style.backgroundColor = "transparent";
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundPosition = "center";
-    document.body.style.width ='100vw';
-    document.body.style.height = '100vh';
-    //document.body.style.transition = "background-image 0.5s";
-    // document.body.style.transitionDelay = "0.5s";
-  })
-
   return (
-    <main style={pageStyles}>
-      This is just my site...
-    </main>
+    <div>
+
+      <div className="headerLinks">
+        <a href="https://www.youtube.com/@ScribeRPG" target="_blank">
+          <StaticImage src="../images/youtube.png" className="logoImage" /></a>
+        <a href="https://www.instagram.com/scriberpg/?fbclid=IwAR3hhAwQkKOqasY7Wjo-_sWvOxqzB23Ry0NXigAHagKKaBgfk7zvRTljrp8" target="_blank">
+          <StaticImage src="../images/Instagram.png" className="logoImage" /></a>
+        <a href="https://www.facebook.com/profile.php?id=61552530251263" target="_blank">
+        <StaticImage src="../images/facebook.png" className="logoImage" /></a>
+      </div>
+
+      {/* <div className="parallax_layer" id="title" style={{ position: "absolute", top: 0, left: 0, zIndex: "10" }}></div> */}
+      
+      {/* <div className="parallax_layer" id="layer7"style={{ position: "absolute", top: 0, left: 0, zIndex: "-3" }}></div>  */}
+
+      <div className="containerWrap">
+        {PageImage()}
+      </div>
+
+
+    </div>
   )
 }
 

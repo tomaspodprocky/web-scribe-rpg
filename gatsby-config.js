@@ -7,6 +7,16 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
+    "react-parallax-mouse",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      }
+    },
+  "gatsby-plugin-image",
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
@@ -35,6 +45,6 @@ module.exports = {
         //origin: "YOUR_SELF_HOSTED_ORIGIN",
       },
     },
-    }
+    },
   ]
 };

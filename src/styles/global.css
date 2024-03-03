@@ -1,11 +1,99 @@
+
 body {
-    background-image: "url(/scribe-background.jpg)";
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    width:'100vw';
-    height: '100vh';
-    /*background-attachment: fixed;
-    background-blend-mode: overlay;
-    transition: background-image 0.5s; */
+    background-color: #76A8D0;
 }
+
+p {
+    color: #000;
+    font-family: -apple-system, Roboto, sans-serif, serif;
+}
+
+.logoImage
+{
+    width:50px;
+    margin-left: 10px;
+
+}
+
+.headerLinks {
+    display:flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.containerWrap {
+    display: flex;
+    justify-content: center;
+}
+
+.containerStyle {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow:visible !important;
+}
+
+.parallaxChild {
+    position:absolute;
+    top:0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imageStyle {
+    width: 300vh;
+    height: 100%;
+}
+
+.parallax_container {
+    overflow: visible;
+	z-index: 1;
+    margin:0px;
+}
+
+.parallax_layer {
+    background-size:cover;
+    background-repeat:repeat-x;
+    background-position: center;
+    background-clip:border-box;
+    width: 100vw;
+    overflow: visible;
+}
+
+.parallax_container, .parallax_layer {
+    height: 100vh;
+}
+
+#layer7 {
+    background-image: url(../images/MainMenuLayer07.png);
+}
+
+#layer6 {
+    background-image: url(../images/MainMenuLayer06.png);
+}
+
+#layer5 {
+    background-image: url(../images/MainMenuLayer05.png);
+}
+
+#layer4 {
+    background-image: url(../images/MainMenuLayer04.png);
+}
+
+#layer3 {
+    background-image: url(../images/MainMenuLayer03.png);
+}
+
+#layer2 {
+    background-image: url(../images/MainMenuLayer02.png);
+}
+
+#layer1 {
+    background-image: url(../images/MainMenuLayer01.png);
+}
+
+#title {
+    background-image: url(../images/MainMenuNadpis.png);
+}
+
