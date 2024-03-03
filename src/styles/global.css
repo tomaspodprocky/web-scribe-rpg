@@ -12,13 +12,15 @@ p {
 {
     width:50px;
     margin-left: 10px;
-
 }
 
 .headerLinks {
     display:flex;
     justify-content: center;
     z-index: 100;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .containerWrap {
