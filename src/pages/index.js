@@ -49,35 +49,35 @@ function PageImage() {
     <MouseParallaxContainer globalFactorX={1} globalFactorY={0} inverted useWindowMouseEvents resetOnLeave className="containerStyle" style={{overflow:"visible !important"}}>
 
       <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{position:"relative", zIndex:-1}}>
-        <StaticImage src="../images/MainMenuLayer07.png" className="imageStyle" />
+        <StaticImage src="../images/Layer0.png" className="imageStyle" />
       </MouseParallaxChild>
 
       <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{ zIndex:10}}>
-        <StaticImage src="../images/MainMenuNadpis.png" className="imageStyle" />
+        <StaticImage src="../images/Title.png" className="imageStyle" />
       </MouseParallaxChild>
 
       <MouseParallaxChild factorX={0.02} factorY={0} className="parallaxChild" style={{zIndex:0}}>
-        <StaticImage src="../images/MainMenuLayer06.png" className="imageStyle" />
+        <StaticImage src="../images/Layer01.png" className="imageStyle" />
       </MouseParallaxChild>
         
       <MouseParallaxChild factorX={0.05} factorY={0} className="parallaxChild" style={{zIndex:1}}>
-        <StaticImage src="../images/MainMenuLayer05.png" className="imageStyle"/>
+        <StaticImage src="../images/Layer02.png" className="imageStyle"/>
       </MouseParallaxChild>
 
       <MouseParallaxChild factorX={0.1} factorY={0} className="parallaxChild" style={{zIndex:2}}>
-        <StaticImage src="../images/MainMenuLayer04.png" className="imageStyle" />
+        <StaticImage src="../images/Layer03.png" className="imageStyle" />
       </MouseParallaxChild>
 
       <MouseParallaxChild factorX={0.15} factorY={0} className="parallaxChild" style={{zIndex:3}}>
-        <StaticImage src="../images/MainMenuLayer03.png" className="imageStyle" />
+        <StaticImage src="../images/Layer04.png" className="imageStyle" />
       </MouseParallaxChild>
 
       <MouseParallaxChild factorX={0.3} factorY={0} className="parallaxChild" style={{zIndex:4}}>
-        <StaticImage src="../images/MainMenuLayer02.png" className="imageStyle" />
+        <StaticImage src="../images/Layer05.png" className="imageStyle" />
       </MouseParallaxChild>
   
       <MouseParallaxChild factorX={0.5} factorY={0} className="parallaxChild" style={{zIndex:5}}>
-        <StaticImage src="../images/MainMenuLayer01.png" className="imageStyle" />
+        <StaticImage src="../images/Layer06.png" className="imageStyle" />
       </MouseParallaxChild>
   
     </MouseParallaxContainer>
