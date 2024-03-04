@@ -69,34 +69,34 @@ p {
 }
 
 #layer7 {
-    background-image: url(../images/MainMenuLayer07.png);
+    background-image: url(../images/Layer0.png);
 }
 
 #layer6 {
-    background-image: url(../images/MainMenuLayer06.png);
+    background-image: url(../images/Layer01.png);
 }
 
 #layer5 {
-    background-image: url(../images/MainMenuLayer05.png);
+    background-image: url(../images/Layer02.png);
 }
 
 #layer4 {
-    background-image: url(../images/MainMenuLayer04.png);
+    background-image: url(../images/Layer03.png);
 }
 
 #layer3 {
-    background-image: url(../images/MainMenuLayer03.png);
+    background-image: url(../images/Layer04.png);
 }
 
 #layer2 {
-    background-image: url(../images/MainMenuLayer02.png);
+    background-image: url(../images/Layer05.png);
 }
 
 #layer1 {
-    background-image: url(../images/MainMenuLayer01.png);
+    background-image: url(../images/Layer06.png);
 }
 
 #title {
-    background-image: url(../images/MainMenuNadpis.png);
+    background-image: url(../images/Title.png);
 }
 
