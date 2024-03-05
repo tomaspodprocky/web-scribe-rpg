@@ -2,6 +2,7 @@ import * as React from "react";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 import { StaticImage } from 'gatsby-plugin-image';
 import '../styles/global.css';
+import animgif from "../images/Layer06.gif";
 
 
 const pageStyles = {
@@ -77,7 +78,8 @@ function PageImage() {
       </MouseParallaxChild>
   
       <MouseParallaxChild factorX={0.5} factorY={0} className="parallaxChild" style={{zIndex:5}}>
-        <StaticImage src="../images/Layer06.png" className="imageStyle" />
+        {/* <StaticImage src="../images/Layer06.png" className="imageStyle" /> */}
+        <img src={animgif} className="imageStyle" /> 
       </MouseParallaxChild>
   
     </MouseParallaxContainer>
