@@ -46,9 +46,9 @@ const PageBackground = () => {
 function PageImage() {
   return (
     
-    <MouseParallaxContainer globalFactorX={1} globalFactorY={0} inverted useWindowMouseEvents resetOnLeave className="containerStyle" style={{overflow:"visible !important"}}>
+    <MouseParallaxContainer globalFactorX={1} globalFactorY={0} inverted useWindowMouseEvents className="containerStyle" style={{overflow:"visible !important"}}>
 
-      <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{position:"relative", zIndex:-1}}>
+      <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{position:"relative", zIndex:-1 }}>
         <StaticImage src="../images/Layer0.png" className="imageStyle" />
       </MouseParallaxChild>
 
@@ -96,7 +96,7 @@ const IndexPage = () => {
         <a href="https://www.instagram.com/scriberpg/?fbclid=IwAR3hhAwQkKOqasY7Wjo-_sWvOxqzB23Ry0NXigAHagKKaBgfk7zvRTljrp8" target="_blank">
           <StaticImage src="../images/Instagram.png" className="logoImage" /></a>
         <a href="https://www.facebook.com/profile.php?id=61552530251263" target="_blank">
-        <StaticImage src="../images/facebook.png" className="logoImage" /></a>
+          <StaticImage src="../images/facebook.png" className="fbImage" style={{}} /></a>
       </div>
 
       {/* <div className="parallax_layer" id="title" style={{ position: "absolute", top: 0, left: 0, zIndex: "10" }}></div> */}

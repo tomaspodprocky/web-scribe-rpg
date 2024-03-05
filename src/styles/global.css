@@ -1,6 +1,7 @@
 
 body {
     background-color: #76A8D0;
+    margin: 0px;
 }
 
 p {
@@ -10,16 +11,24 @@ p {
 
 .logoImage
 {
-    width:50px;
-    margin-left: 10px;
+    width:10vh;
+    /* margin-left: 10px; */
 }
+
+.fbImage
+{
+    width:6.5vh;
+    /* margin-left: 10px; */
+}
+
 
 .headerLinks {
     display:flex;
     justify-content: center;
+    align-items: center;
     z-index: 100;
     position:absolute;
-    top: 0px;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -60,8 +69,8 @@ p {
     background-repeat:repeat-x;
     background-position: center;
     background-clip:border-box;
+    z-index: -1;
     width: 100vw;
-    overflow: visible;
 }
 
 .parallax_container, .parallax_layer {
