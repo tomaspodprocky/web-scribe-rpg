@@ -49,9 +49,10 @@ function PageImage() {
     
     <MouseParallaxContainer globalFactorX={1} globalFactorY={0} inverted useWindowMouseEvents className="containerStyle" style={{overflow:"visible !important"}}>
 
-      <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{position:"relative", zIndex:-1 }}>
-        <StaticImage src="../images/Layer0.png" className="imageStyle" />
-      </MouseParallaxChild>
+      <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{ position: "relative", zIndex: -1 }}>
+        <div className="parallax_layer" id="layer7" />
+        {/* <StaticImage src="../images/Layer0.png" className="imageStyle" /> */}
+      </MouseParallaxChild> 
 
       <MouseParallaxChild factorX={0} factorY={0} className="parallaxChild" style={{ zIndex:10}}>
         <StaticImage src="../images/Title.png" className="imageStyle" />
@@ -92,6 +93,9 @@ const IndexPage = () => {
   return (
     <div>
 
+      <div className="links_container" style={{zIndex:"100"}}>
+        <a href="https://www.kickstarter.com/projects/rawmeat/scribe-rpg-an-2d-open-world-action-adventure-rpg" target="_blank">
+          <StaticImage src="../images/follow_kickstarter.png" style={{width:"27vh", height:"6vh"}} /></a>
       <div className="headerLinks">
         <a href="https://www.youtube.com/@ScribeRPG" target="_blank">
           <StaticImage src="../images/youtube.png" className="logoImage" /></a>
@@ -99,6 +103,7 @@ const IndexPage = () => {
           <StaticImage src="../images/Instagram.png" className="logoImage" /></a>
         <a href="https://www.facebook.com/profile.php?id=61552530251263" target="_blank">
           <StaticImage src="../images/facebook.png" className="fbImage" style={{}} /></a>
+      </div>
       </div>
 
       {/* <div className="parallax_layer" id="title" style={{ position: "absolute", top: 0, left: 0, zIndex: "10" }}></div> */}
