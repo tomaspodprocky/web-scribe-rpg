@@ -1,4 +1,5 @@
 import * as React from "react";
+import { SEO } from "../components/seo"
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 import { StaticImage } from 'gatsby-plugin-image';
 import '../styles/global.css';
@@ -92,7 +93,9 @@ const IndexPage = () => {
 
   return (
     <div>
-
+      <div className="p1">
+        <a href="/ScribeRPGpresskit.zip">Press kit download</a>
+      </div>
       <div className="links_container" style={{zIndex:"100"}}>
         <a href="https://www.kickstarter.com/projects/rawmeat/scribe-rpg-an-2d-open-world-action-adventure-rpg" target="_blank">
           <StaticImage src="../images/follow_kickstarter.png" style={{width:"27vh", height:"6vh"}} /></a>
@@ -121,6 +124,8 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Scribe RPG</title>
+export const Head = () => (
+  <SEO />
+)
 
 

@@ -4,7 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `ScribeRPG`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.scriberpg.com`,
+    description: `a 2D open world action, adventure, RPG`,
+    image: `/Scribe_avatar.jpg`
   },
   plugins: [
     "react-parallax-mouse",
