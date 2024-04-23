@@ -97,8 +97,8 @@ const IndexPage = () => {
         <a href="/ScribeRPGpresskit.zip"><StaticImage src="../images/PressKD.png" style={{width:"24vh"}} /></a>
       </div>
       <div className="links_container" style={{zIndex:"100"}}>
-        <a href="https://www.kickstarter.com/projects/rawmeat/scribe-rpg-an-2d-open-world-action-adventure-rpg" target="_blank">
-          <StaticImage src="../images/follow_kickstarter.png" style={{width:"27vh", height:"6vh"}} /></a>
+        {/* <a href="https://www.kickstarter.com/projects/rawmeat/scribe-rpg-an-2d-open-world-action-adventure-rpg" target="_blank">
+          <StaticImage src="../images/follow_kickstarter.png" style={{width:"27vh", height:"6vh"}} /></a> */}
       <div className="headerLinks">
         <a href="https://www.youtube.com/@ScribeRPG" target="_blank">
           <StaticImage src="../images/youtube.png" className="logoImage" /></a>
