@@ -105,7 +105,9 @@ const IndexPage = () => {
         <a href="https://www.instagram.com/scriberpg/?fbclid=IwAR3hhAwQkKOqasY7Wjo-_sWvOxqzB23Ry0NXigAHagKKaBgfk7zvRTljrp8" target="_blank">
           <StaticImage src="../images/Instagram.png" className="logoImage" /></a>
         <a href="https://www.facebook.com/profile.php?id=61552530251263" target="_blank">
-          <StaticImage src="../images/facebook.png" className="fbImage" style={{}} /></a>
+            <StaticImage src="../images/facebook.png" className="fbImage" style={{}} /></a>
+        <a href="https://store.steampowered.com/app/3005660/Scribe_RPG/" target="_blank">
+          <StaticImage src="../images/steam_logo.png" className="logoImage" style={{}} /></a>
       </div>
       </div>
 
